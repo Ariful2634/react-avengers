@@ -9,8 +9,8 @@ const Clause = ({actorName,salary,remaining}) => {
 
     return (
         <div className="bg-gray-400 p-5 rounded-lg">
-            <h2 className="font-semibold text-pink-600">Signing Clause: {actorName.length}</h2>
-            <div >
+            <h2 className="font-semibold ">Signing Clause: {actorName.length}</h2>
+            <div className="border p-4 mt-4 rounded-lg bg-orange-300">
                 <p className="text-center">Total Salary: {salary}</p>
                 <p>Remaining: {remaining}</p>
             </div>

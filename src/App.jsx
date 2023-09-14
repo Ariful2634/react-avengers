@@ -22,6 +22,9 @@ function App() {
       actorName.forEach(sal=>{
         count = count+sal.salary;
       })
+      if(count>40000){
+        return alert('Budget overload')
+      }
       setSalary(count)
       
       const rem = 40000-count;
@@ -36,11 +39,13 @@ function App() {
 
   return (
     <>
-      <h1 className='text-4xl mb-10'>Avengers End Game</h1>
+     <div >
+     <h1 className='text-4xl mb-10'>Avengers End Game</h1>
       <div className='md:flex justify-evenly'>
         <Cart clickHandler={clickHandler}></Cart>
         <Clause actorName={actorName} salary={salary} remaining={remaining} ></Clause>
       </div>
+     </div>
 
     </>
   )

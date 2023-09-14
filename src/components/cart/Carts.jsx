@@ -22,4 +22,6 @@ const Carts = ({actor,clickHandler}) => {
     );
 };
 
+
+
 export default Carts;
